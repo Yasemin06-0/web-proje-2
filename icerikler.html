@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yapay Zeka Rehberi - İçerikler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Ana Menü">
+      <a href="index.html" class="logo">YZ Rehberi</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="icerikler.html" class="active">İçerikler</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Yapay Zeka Uygulamaları</h1>
+
+    <div class="search-box">
+      <label for="searchInput">Başlığa Göre Ara:</label>
+      <div class="search-controls">
+        <input type="search" id="searchInput" placeholder="Örn: ChatGPT, Copilot...">
+        <button type="button" id="clearBtn">Temizle</button>
+      </div>
+      <p id="resultCount" class="result-count">5 sonuç gösteriliyor</p>
+    </div>
+
+    <p id="emptyMessage" class="empty-message" hidden>Aramanızla eşleşen içerik bulunamadı.</p>
+
+    <section class="card-grid" id="cardGrid">
+      <article class="card">
+        <h2>ChatGPT</h2>
+        <p>Metin üretimi, özetleme ve karmaşık konuları sadeleştirme sorununu çözer.</p>
+        <p class="extra-info"><strong>Örnek Kullanım:</strong> Uzun bir ders notunu sınav öncesi maddeler halinde özetlemek.</p>
+      </article>
+
+      <article class="card">
+        <h2>Midjourney</h2>
+        <p>Tasarım bilgisi olmadan metin komutlarıyla özgün görsel üretme sorununu çözer.</p>
+        <p class="extra-info"><strong>Örnek Kullanım:</strong> Bir sunum kapağı veya blog yazısı için yüksek çözünürlüklü illüstrasyon oluşturmak.</p>
+      </article>
+
+      <article class="card">
+        <h2>GitHub Copilot</h2>
+        <p>Kod yazarken tekrarlayan yapıları kurma ve sözdizimi hatalarını bulma sorununu çözer.</p>
+        <p class="extra-info"><strong>Örnek Kullanım:</strong> Web projesinde filtreleme fonksiyonu yazarken anlık kod önerisi almak.</p>
+      </article>
+
+      <article class="card">
+        <h2>Notion AI</h2>
+        <p>Dağınık proje notlarını düzenleme ve toplantı çıktılarından görev listesi çıkarma sorununu çözer.</p>
+        <p class="extra-info"><strong>Örnek Kullanım:</strong> Haftalık ders çalışma planını otomatik tabloya dönüştürmek.</p>
+      </article>
+
+      <article class="card">
+        <h2>Perplexity AI</h2>
+        <p>İnternette bilgi ararken reklamsız ve doğrudan kaynak gösterimli yanıt bulma sorununu çözer.</p>
+        <p class="extra-info"><strong>Örnek Kullanım:</strong> Akademik bir ödev için güncel istatistikleri kaynak linkleriyle doğrulamak.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
